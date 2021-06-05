@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="refresh" content="100" > -->
+</head>
+<style>
+code {
+    white-space: pre-wrap;
+}
+</style>
+<body>
+
+<code id="displayData"></code>
+<iframe id='ifr' frameborder="0" scrolling="no" width="550" height="400" allow="autoplay;camera;microphone" src='https://obs.ninja/?view=tBasd'></iframe>
+<script>
+  function newSite(index) {
+    // var xmlhttp = new XMLHttpRequest();
+    var sites = ["",
+                    'https://obs.ninja/?pw=1qazxsw23edc&view=Ya324W9']
+    var url = sites[index];//Math.floor(Math.random() * sites.length)];
+    document.getElementById("ifr").src=url;
+    // xmlhttp.onreadystatechange=function() {
+    //   if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    //     processResponse(xmlhttp.responseText);
+    //   }
+    // }
+    // xmlhttp.open("GET", url, true);
+    // xmlhttp.send();
+
+    // function processResponse(response) {
+    // document.getElementById("displayData").innerHTML = response;
+    // }
+    // console.log(url)
+  }
+  // newSite(0)
+</script>
+
+<input type="button" value="Desk" onClick="newSite(0)" />
+<input type="button" value="Matisse" onClick="newSite(1)" />
+</body>
+</html>
